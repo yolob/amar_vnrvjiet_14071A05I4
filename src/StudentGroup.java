@@ -142,13 +142,12 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		if(Check(student)==0)
 		{
-			System.out.println("remove error entered");
+			//System.out.println("remove error entered");
 			throw new IllegalArgumentException();
-		}
-			
+		}	
 		else
 		{
-			System.out.println("removed"+student.getFullName()+linkedList.remove(student));
+			linkedList.remove(student)
 		}
 			
 	}
@@ -224,7 +223,7 @@ public class StudentGroup implements StudentArrayOperation {
 		if(date==null)
 			throw new IllegalArgumentException();
 		LinkedList<Student> l=getbday(date);
-	l.toArray(temp);
+		l.toArray(temp);
 		return temp;
 	}
 
