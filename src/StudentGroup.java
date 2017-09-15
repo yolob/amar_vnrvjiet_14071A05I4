@@ -37,7 +37,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public Student[] getStudents() {
 		// Add your implementation here
 		//temp=new Student[linkedList.size()];
-		System.out.println("size of LL is"+linkedList.size());
+		//System.out.println("size of LL is"+linkedList.size());
 		students=linkedList.toArray(new Student[linkedList.size()]);
 		return students;
 	}
